@@ -4,6 +4,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,8 +19,8 @@ public class Main {
         String json = readString(jsonFileName);
         List<Employee> list = jsonToList(json);
 
-        if(list.size() > 0) {
-            for(Employee employee: list) {
+        if (list.size() > 0) {
+            for (Employee employee : list) {
                 System.out.println(employee);
             }
         } else {
